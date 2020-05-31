@@ -9,9 +9,8 @@ This script will generate up to 5 preroll videos based on the recently added mov
 
 ## Installation
 
-```bash
-npm install
-```
+1. Run `npm install` to install all necesary dependencies
+2. Update the `config.ts` file with your plex hostname and credentials
 
 ## Running
 
