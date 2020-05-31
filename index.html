@@ -1,0 +1,297 @@
+<html>
+  <head></head>
+  <body>
+    <div id="meta">
+      <div id="tagline"></div>
+      <div id="rating"></div>
+      <div id="title"></div>
+      <div id="year"></div>
+      <div id="actors"></div>
+    </div>
+    <div id="cover">
+      <div id="logo">
+        <svg height="331.9881" viewBox="0 0 1024 331.9881" width="1024" 
+          xmlns="http://www.w3.org/2000/svg" 
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          id="plex">
+          <g fill-rule="evenodd" transform="scale(.3318222)">
+            <path fill="#fff" d="m3085.99 0h-290l-290 500 290 500h289.747l-289.747-499.75z" />
+            <path fill="#fff" d="m2085.947 1000h-577.073v-1000h577.073v173.737h-364.607v219.563h339.254v173.73h-339.254v257.865h364.607zm-1294.671 0v-1000h212.04v824.895h405.61v175.105z" />
+            <path fill="#fff" d="m589.947 558.824c-67.268 57.007-162.91 85.5-286.938 85.5h-90.97v355.676h-212.039v-529.662l290 .36c177.563-2.07 186.842-110.82 186.842-148.498 0-34.98 0-146.755-157.842-148.5l-319 .003v-173.703h319.424c121.293 0 213.516 26.107 276.676 78.32 63.153 52.214 94.734 130.072 94.734 233.582 0 107.625-33.632 189.928-100.887 246.922z" />
+            <path fill="#fff" d="m0 110h212.2v429h-212.2z" />
+          </g>
+        </svg>
+        <svg height="331.9881" viewBox="0 0 1024 331.9881" width="1024" 
+          xmlns="http://www.w3.org/2000/svg" 
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          id="play">
+          <radialGradient id="a" cx="3496.9575" cy="388.73517" gradientTransform="scale(.78082978 1.2806889)" gradientUnits="userSpaceOnUse" r="722.62866">
+            <stop offset="0" stop-color="#f9be03" />
+            <stop offset="1" stop-color="#cc7c19" />
+          </radialGradient>
+          <g fill-rule="evenodd" transform="scale(.3318222)">
+            <path fill="url(#a)" d="m2186 0h290l320 500.25-320 500.25h-290l320-500.25z" />
+          </g>
+        </svg>
+      </div>
+    </div>
+  </body>
+  <style type="text/css">
+    @font-face {
+      font-family: NotoSans;
+      src: url(NotoSans-Regular.ttf);
+    }
+
+    #tagline {
+      position: absolute;
+      top: 32px;
+      left: 32px;
+    }
+
+    #rating {
+      position: absolute;
+      bottom: 32px;
+      right: 32px;
+      font-size: 48px;
+    }
+
+    #title {
+      position: absolute;
+      bottom: 116px;
+      right: 32px;
+      font-size: 128px;
+    }
+
+    #year {
+      position: absolute;
+      bottom: 336px;
+      right: 32px;
+      font-size: 48px;
+    }
+
+    #actors {
+      position: absolute;
+      bottom: 256px;
+      right: 32px;
+      font-size: 48px;
+    }
+
+    html, body {
+      width: 3840px;
+      height: 2160px;
+      margin: 0;
+      overflow: hidden;
+      font-family: NotoSans;
+      background-color: #000;
+    }
+
+    body {
+      background-position: center center;
+      background-size: cover;
+    }
+
+    #cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #cover::before {
+      position: absolute;
+      top: -114%;
+      left: 0;
+      right: -100%;
+      bottom: -110%;
+      content: '';
+      background: #000;
+      z-index: -1;
+      transform: rotate(30deg);
+    }
+
+    #logo {
+      width: 1024px;
+      height: 332px;
+      opacity: 0;
+    }
+
+    #play {
+      transform-origin: 930px center;
+    }
+
+    svg {
+      overflow: visible;
+      position: absolute;
+    }
+
+    #meta {
+      color: #fff;
+      text-shadow: 0 0 10px #000;
+      font-size: 64px;
+      line-height: 1;
+      opacity: 0;
+    }
+
+    #rating {
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwMCA1NjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlLW1pdGVybGltaXQ9IjEuNDE0IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTAgODkuOTk2QzAgNjIuMzg0IDIyLjM3OCA0MCA0OS45OTcgNDBoOTAwLjAwNkM5NzcuNjE2IDQwIDEwMDAgNjIuMzg4IDEwMDAgODkuOTk2djM4MC4wMDhjMCAyNy42MTItMjIuMzc4IDQ5Ljk5Ni00OS45OTcgNDkuOTk2SDQ5Ljk5N0MyMi4zODQgNTIwIDAgNDk3LjYxMiAwIDQ3MC4wMDRWODkuOTk2eiIgZmlsbD0iI2UxYmUwMCIvPjxwYXRoIGQ9Ik03NjkuNjggMTM0Ljc2djk0LjY0YzYuMDMtNi45NzYgMTIuNzUzLTEyLjE4MSAyMC4xNy0xNS42MSA3LjQxOS0zLjQyOCAxOC41NTItNS4xNTcgMjcuMjQtNS4xNTcgMTAuMDEgMCAxOC42ODUgMS41NTIgMjYuMDQgNC42NjcgNy4zNjIgMy4xMDkgMTIuOTY3IDcuNDcxIDE2LjgyOSAxMy4wOCAzLjg1NyA1LjYxNCA2LjE3MiAxMS4xMSA2Ljk2MiAxNi40ODUuNzgxIDUuMzc3IDEuMTc2IDE2Ljg0MyAxLjE3NiAzNC40MXY4MS42M2MwIDE3LjQ0OC0xLjE3NiAzMC40MzQtMy41MjggMzguOTgxLTIuMzU3IDguNTQzLTcuODgxIDE1Ljk1OC0xNi41NjcgMjIuMjMtOC42OTEgNi4yNjctMTkgOS40MDUtMzAuOTUyIDkuNDA1LTguNTY3IDAtMTkuNjQ4LTEuODU3LTI3LjA3LTUuNTgxLTcuNDI0LTMuNzI0LTE0LjIxLTkuMzE0LTIwLjM2Mi0xNi43NjdsLTQuNzA5IDE4LjUzOGgtNjguMDR2LTI5MC45NWg3Mi44MDltLTYzMS41OCAyOTAuOTVoNzUuNTh2LTI5MC45NWgtNzUuNTh2MjkwLjk1bTE5OS4zOC0yOTAuOTVjMi44ODEgMTcuNjE1IDUuOSAzOC4yOSA5LjA2IDYyLjAxbDEwLjgyOSA3My45MTUgMTcuNTA1LTEzNS45Mmg5OC43M3YyOTAuOTVoLTY1Ljk5bC0uMjM5LTE5Ni4zOC0yNi40MzMgMTk2LjM4aC00Ny4xNWwtMjcuODYyLTE5Mi4xMS0uMjM4IDE5Mi4xMWgtNjYuMnYtMjkwLjk1aDk3Ljk5bTIxOC4zNiAwYzM2LjU4MSAwIDU3LjYyOSAxLjY4MSA3MC41MiA1LjAzIDEyLjg5NSAzLjM0NyAyMi43MDUgOC44NDcgMjkuNDE5IDE2LjUwNCA2LjcxOSA3LjY1NyAxMC45MTUgMTYuMTgxIDEyLjU5NSAyNS41NjcgMS42NzcgOS4zOSAyLjc1MiAyNy44NDMgMi43NTIgNTUuMzZ2MTAyLjE4YzAgMjYuMDgtMS40NjEgNDMuNTE5LTMuOTE4IDUyLjMxLTIuNDYyIDguOC02Ljc0OCAxNS42NzYtMTIuODYyIDIwLjYzOC02LjEyNCA0Ljk2Mi0xMy42NzYgOC40MzMtMjIuNjcyIDEwLjQwNC05IDEuOTc3LTIyLjU1MSAyLjk2Mi00MC42NTcgMi45NjJoLTkxLjU3di0yOTAuOTVoNTYuMzltMjM5LjMzIDIyMC4zNWMwIDE0LjA4LS43IDIyLjk3Ny0yLjA5NiAyNi42NzctMS40IDMuNzA0LTcuNDg1IDUuNTY2LTEyLjEgNS41NjYtNC41IDAtNy41LTEuNzg2LTkuMDItNS4zNzEtMS41MTktMy41ODEtMi4yNzItMTEuNzU3LTIuMjcyLTI0LjUzOHYtNzYuODkxYzAtMTMuMjU3LjY2Ny0yMS41MTkgMi0yNC44MDkgMS4zMzMtMy4yNzcgNC4yNDgtNC45MjQgOC43NDMtNC45MjQgNC42MDkgMCAxMC43OTYgMS44NzEgMTIuMzc2IDUuNjMzIDEuNTc2IDMuNzYyIDIuMzY3IDExLjc5NSAyLjM2NyAyNC4wOXY3NC41N20tMjAzLjM3LTE2Ny45OWMyLjk4NiAxLjcyOCA0LjkwMSA0LjQ1NyA1LjczNCA4LjE1Ny44MzMgMy43MDkgMS4yNTcgMTIuMTM4IDEuMjU3IDI1LjI5djExMi44YzAgMTkuMzcxLTEuMjU3IDMxLjIzLTMuNzY3IDM1LjU5NS0yLjUwOSA0LjM3MS05LjIgNi41NDgtMjAuMDYgNi41NDh2LTE5MC45OWM4LjIzNCAwIDEzLjg1Mi44NjYgMTYuODM4IDIuNiIvPjwvc3ZnPg==);
+      background-size: 96px 50px;
+      padding-left: 110px;
+      background-repeat: no-repeat;
+    }
+  </style>
+  <script type="text/javascript">
+    const TARGET_LEGTH = 6;
+    const FPS = 60;
+    const TOTAL_FRAMES = TARGET_LEGTH * FPS;
+
+    const EasingFunctions = {
+      // no easing, no acceleration
+      linear: t => t,
+      // accelerating from zero velocity
+      easeInQuad: t => t*t,
+      // decelerating to zero velocity
+      easeOutQuad: t => t*(2-t),
+      // acceleration until halfway, then deceleration
+      easeInOutQuad: t => t<.5 ? 2*t*t : -1+(4-2*t)*t,
+      // accelerating from zero velocity 
+      easeInCubic: t => t*t*t,
+      // decelerating to zero velocity 
+      easeOutCubic: t => (--t)*t*t+1,
+      // acceleration until halfway, then deceleration 
+      easeInOutCubic: t => t<.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1,
+      // accelerating from zero velocity 
+      easeInQuart: t => t*t*t*t,
+      // decelerating to zero velocity 
+      easeOutQuart: t => 1-(--t)*t*t*t,
+      // acceleration until halfway, then deceleration
+      easeInOutQuart: t => t<.5 ? 8*t*t*t*t : 1-8*(--t)*t*t*t,
+      // accelerating from zero velocity
+      easeInQuint: t => t*t*t*t*t,
+      // decelerating to zero velocity
+      easeOutQuint: t => 1+(--t)*t*t*t*t,
+      // acceleration until halfway, then deceleration 
+      easeInOutQuint: t => t<.5 ? 16*t*t*t*t*t : 1+16*(--t)*t*t*t*t
+    }
+
+    function init(media) {
+      window.title.innerText = media.title;
+      window.year.innerText = media.year;
+      window.rating.innerText = media.rating;
+      window.tagline.innerText = media.tagline;
+      window.actors.innerText = media.roles.join(', ');
+      document.body.style.backgroundImage = `url(media/${media.key}.jpg)`;
+    }
+
+    function renderFrame(frameNumber) {
+      const INTRO_DELAY = 0.25;
+      const INTRO_LENGTH = 0.75;
+      const CLICK_DELAY = 1.25;
+      const CLICK_LENGTH = 0.5;
+      const FADE_LENGTH = 0.75;
+      const SLIDE_DELAY = 1.75;
+      const SLIDE_LENGTH = 1;
+      const INFO_DELAY = 2.5;
+      const INFO_LENGTH = 0.75;
+      const FADEOUT_LENGTH = 0.75;
+      
+      const HALF_CLICK = CLICK_LENGTH / 2;
+      const CLICK_HALF_WAY = CLICK_DELAY + HALF_CLICK;
+      const FADEOUT_DELAY = TARGET_LEGTH - FADEOUT_LENGTH;
+      const IDLE_START = INFO_DELAY + INFO_LENGTH;
+      
+      const second = frameNumber / FPS;
+      let same = true;
+
+      if (second >= INTRO_DELAY && second <= INTRO_LENGTH + INTRO_DELAY) {
+        const introPct = EasingFunctions.easeInQuint(second / INTRO_LENGTH - INTRO_DELAY);
+        window.logo.style.opacity = introPct;
+        window.logo.style.transform = `scale(${1 + Math.max(0, 1 - introPct) * 4})`;
+        same = false;
+      }
+
+      if (second >= CLICK_DELAY && second <= CLICK_DELAY + CLICK_LENGTH) {
+        const clickStatus = second >= CLICK_HALF_WAY
+          ? (CLICK_DELAY + CLICK_LENGTH) - second
+          : second - CLICK_DELAY;
+        const clickPct = EasingFunctions.easeInQuint(clickStatus / CLICK_LENGTH);
+        window.play.style.transform = `scale(${1 + clickPct * 5})`;
+        same = false;
+      }
+
+      if (second >= CLICK_HALF_WAY && second <= CLICK_HALF_WAY + FADE_LENGTH) {
+        const pct = EasingFunctions.easeInQuint((second - CLICK_HALF_WAY) / FADE_LENGTH);
+        window.plex.style.opacity = 1 - pct;
+        same = false;
+      }
+
+      if (second >= SLIDE_DELAY && second <= SLIDE_DELAY + SLIDE_LENGTH) {
+        const pct = EasingFunctions.easeInQuint((second - SLIDE_DELAY) / SLIDE_LENGTH);
+        window.cover.style.transform = `translateX(${pct * 150}%)`;
+        window.play.style.transform = `translateX(${-pct * 290}%)`;
+        same = false;
+      }
+
+      if (second >= INFO_DELAY && second <= INFO_DELAY + INFO_LENGTH) {
+        const pct = EasingFunctions.easeInQuint((second - INFO_DELAY) / INFO_LENGTH);
+        window.meta.style.opacity = pct;
+
+        const pctOut = EasingFunctions.easeOutQuint((second - INFO_DELAY) / INFO_LENGTH);
+        window.tagline.style.transform = `translateX(${3840 * (pctOut * 100 - 100) / 100}px)`;
+        window.year.style.transform = `translateX(${-3840 * (pctOut * 100 - 100) / 100}px)`;
+        window.actors.style.transform = `translateX(${-3840 * (pctOut * 100 - 100) / 100}px)`;
+        window.title.style.transform = `translateX(${-3840 * (pctOut * 100 - 100) / 100}px)`;
+        window.rating.style.transform = `translateX(${-3840 * (pctOut * 100 - 100) / 100}px)`;
+
+        same = false;
+      }
+
+      if (second >= FADEOUT_DELAY && second <= FADEOUT_DELAY + FADEOUT_LENGTH) {
+        const pct = EasingFunctions.easeInQuint((second - FADEOUT_DELAY) / FADEOUT_LENGTH);
+        document.body.style.opacity = 1 - pct;
+        window.tagline.style.transform = `translateX(${-3840 * (pct * 100) / 100}px)`;
+        window.year.style.transform = `translateX(${3840 * (pct * 100) / 100}px)`;
+        window.actors.style.transform = `translateX(${3840 * (pct * 100) / 100}px)`;
+        window.title.style.transform = `translateX(${3840 * (pct * 100) / 100}px)`;
+        window.rating.style.transform = `translateX(${3840 * (pct * 100) / 100}px)`;
+        same = false;
+      }
+
+      return same;
+    }
+
+    if (window.location.hash === '#browser') {
+      init({
+        "title": "47 Ronin",
+        "year": 2013,
+        "rating": 1.6,
+        "audienceRating": 4.8,
+        "tagline": "For courage. For loyalty. For honor.",
+        "art": "/library/metadata/145/art/1589317292",
+        "roles": [
+          "Keanu Reeves",
+          "Hiroyuki Sanada",
+          "Kou Shibasaki"
+        ],
+        "key": "_library_metadata_145",
+        "summary": "Kai—an outcast—joins Oishi, the leader of 47 outcast samurai.  Together they seek vengeance upon the treacherous overlord who killed their master and banished their kind.  To restore honour to their homeland, the warriors embark upon a quest that challenges them with a series of trials that would destroy ordinary warriors."
+      });
+
+      setTimeout(() => {
+        let count = 0;
+        let interval = setInterval(() => {
+          if (count < TOTAL_FRAMES) {
+            renderFrame(count + 1);
+            count++;
+          } else {
+            clearInterval(interval);
+          }
+        }, 1000 / FPS);
+      }, 20);
+    }
+  </script>
+</html>

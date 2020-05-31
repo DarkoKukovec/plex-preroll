@@ -1,0 +1,10 @@
+node_modules
+.DS_Store
+final
+!final/.gitkeep
+frames
+!frames/.gitkeep
+media
+!media/.gitkeep
+prerolls
+!prerolls/.gitkeep
